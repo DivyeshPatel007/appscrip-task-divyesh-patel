@@ -41,14 +41,14 @@ const ProductItem = ({ product }: { product: any }) => {
             {/* Image */}
             <div className='aspect-square relative'>
                 {imageLoading && <Skeleton className="w-full h-full absolute inset-0" />}
-
                 <Image
                     src={product.image}
-                    alt={product.title}
+                    alt={product.title ?? "Product Image"}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     style={{ objectFit: "contain" }}
                     onLoad={() => setImageLoading(false)}
+
                 />
 
             </div>

@@ -10,7 +10,7 @@ const FilterSideBar = ({ click, handleClick }: { click: string, handleClick: (fi
     }
     // if (click === filterNames.MobileFilter) {
     //     return (
-    //         <DesktopFilterBar />
+    //         <div>mobilefilterbars</div>
     //     )
     // }
     return null

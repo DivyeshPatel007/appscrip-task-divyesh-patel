@@ -204,3 +204,86 @@ export const filterSections = [
         ],
     },
 ];
+
+export const footerLinks = [
+    {
+        title: "mettā muse",
+        links: [
+            {
+                linkName: 'About Us',
+                path: '/'
+            },
+            {
+                linkName: 'Stories',
+                path: '/'
+            },
+            {
+                linkName: 'Artisans',
+                path: '/'
+            },
+            {
+                linkName: 'Boutiques',
+                path: '/'
+            },
+            {
+                linkName: 'Contact Us',
+                path: '/'
+            },
+            {
+                linkName: 'EU Compliances Docs',
+                path: '/'
+            },
+
+        ]
+    },
+    {
+        title: "QUICK LINKS",
+        links: [
+            {
+                linkName: 'Order & Shipping',
+                path: '/'
+            },
+            {
+                linkName: 'Join/Login as a seller',
+                path: '/'
+            },
+            {
+                linkName: 'Payment & Pricing',
+                path: '/'
+            },
+            {
+                linkName: 'Return & Refunds',
+                path: '/'
+            },
+            {
+                linkName: 'FAQs',
+                path: '/'
+            },
+            {
+                linkName: 'Privacy Policy',
+                path: '/'
+            },
+            {
+                linkName: 'Terms  & Conditions',
+                path: '/'
+            },
+
+        ]
+    },
+    {
+        title: "FOLLOW US",
+        links: [
+            {
+                linkName: 'Instagram',
+                icons: '',
+                path: '/'
+            },
+            {
+                linkName: 'LinkedIn',
+                icons: '',
+                path: '/'
+            },
+        ]
+    },
+
+]
