@@ -18,7 +18,7 @@ const FilterRecommend = ({ click, handleClick, totalProduct }: { totalProduct: s
     return (
         <>
             <div className="border border-slate-300 flex items-center justify-evenly h-14 mt-8 lg:justify-between lg:px-10">
-                <div className="uppercase text-xl font-bold lg:text-lg flex gap-1 items-center">
+                <div className="uppercase  font-bold  flex gap-1 items-center">
                     <span className="cursor-pointer hidden font-medium lg:block mr-3" >
                         {totalProduct} ITEMS
                     </span>
@@ -36,7 +36,7 @@ const FilterRecommend = ({ click, handleClick, totalProduct }: { totalProduct: s
                 </div>
                 <div className="w-[0.5px] h-9 bg-slate-300 lg:hidden"></div>
                 <div className="relative">
-                    <div className="uppercase text-xl font-semibold flex items-centers lg:text-lg">
+                    <div className="uppercase  font-semibold flex items-centers ">
                         <span
                             className="cursor-pointer mr-3"
                             onClick={() => handleClick(filterNames.Recommended)}

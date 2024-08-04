@@ -1,8 +1,10 @@
 import StarIcon from '@/assets/StarIcon'
 import USAFlagIcon from '@/assets/UsaFlagIcon'
 import React from 'react'
-import FooterFAQs from './FooterFAQs'
 import { footerLinks } from '@/consts'
+import FooterFAQs from './FooterFAQs'
+
+
 
 
 interface Links {

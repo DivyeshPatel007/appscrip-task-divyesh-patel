@@ -36,6 +36,8 @@ const ProductItem = ({ product }: { product: any }) => {
     }
 
 
+
+
     return (
         <div className='w-full py-2' >
             {/* Image */}
@@ -48,14 +50,15 @@ const ProductItem = ({ product }: { product: any }) => {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     style={{ objectFit: "contain" }}
                     onLoad={() => setImageLoading(false)}
-
+                    placeholder='blur'
+                    blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqgcAAIkAgzU/z1kAAAAASUVORK5CYII='
                 />
 
             </div>
             {/* Content */}
             <div className='flex gap-2' >
                 <div>
-                    <h3 className='font-bold uppercase text-xl'>{truncateTitle(product.title, 30)}</h3>
+                    <h3 className='font-bold uppercase text-base'>{truncateTitle(product.title, 30)}</h3>
                     <p className='text-gray-500'>
                         <Link className='underline' href={'/sign-in'}>Sign In</Link> or Create an account to see pricing
                     </p>

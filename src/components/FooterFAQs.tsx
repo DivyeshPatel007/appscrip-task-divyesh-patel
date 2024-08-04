@@ -1,11 +1,11 @@
 'use client'
+
 import React, { useState } from 'react'
-import { PiCaretDownThin, PiCaretUpThin } from 'react-icons/pi'
-import { IFooterLink } from '../../../../Projects/product/src/components/Footer';
+import { IFooterLink } from './Footer'
+import { PiCaretDownThin, PiCaretUpThin } from 'react-icons/pi';
 
 const FooterFAQs = ({ footerLink }: { footerLink: IFooterLink }) => {
     const [showLinks, setShowLinks] = useState<boolean>(false);
-
     return (
         <div className='border-b border-gray-200 py-4 text-white  xl:border-none '>
             <div
@@ -51,3 +51,6 @@ const FooterFAQs = ({ footerLink }: { footerLink: IFooterLink }) => {
 }
 
 export default FooterFAQs
+
+
+
