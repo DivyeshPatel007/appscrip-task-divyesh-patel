@@ -8,7 +8,7 @@ const Recommend = ({ click }: { click: string }) => {
 
 
     return (
-        <div className={`z-40 bg-white absolute top-12 -left-5 w-[250px] shadow-lg px-10 py-4 ${click === filterNames.Recommended ? 'block ' : 'hidden'}`}>
+        <div className={`z-40 bg-white absolute top-12 right-0 w-[250px] shadow-lg px-10 py-4 ${click === filterNames.Recommended ? 'block ' : 'hidden'}`}>
             {options.map((option) => (
                 <div
                     key={option.value}

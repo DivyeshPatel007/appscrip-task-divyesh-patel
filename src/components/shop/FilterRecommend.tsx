@@ -31,7 +31,8 @@ const FilterRecommend = ({ click, handleClick, totalProduct }: { totalProduct: s
                         <PiCaretLeftThin className="hidden -mt-1 lg:block" />
                     )}
                     <span className="cursor-pointer hidden lg:block" onClick={() => handleClick(filterNames.DesktopFilter)}>
-                        {click === filterNames.None ? "Show Filter" : "Hide Filter"}
+                        {click === filterNames.None ? "Show Filter" : click === filterNames.Recommended ? 'Show Filter' : "Hide Filter"}
+
                     </span>
                 </div>
                 <div className="w-[0.5px] h-9 bg-slate-300 lg:hidden"></div>
@@ -43,7 +44,7 @@ const FilterRecommend = ({ click, handleClick, totalProduct }: { totalProduct: s
                         >
                             Recommended
                         </span>
-                        {click === "recommended" ? (
+                        {click === filterNames.Recommended ? (
                             <PiCaretUpThin className="mt-[3.5px]" />
                         ) : (
                             <PiCaretDownThin className="mt-[3.5px]" />
