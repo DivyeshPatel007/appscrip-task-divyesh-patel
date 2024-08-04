@@ -50,8 +50,6 @@ const ProductItem = ({ product }: { product: any }) => {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     style={{ objectFit: "contain" }}
                     onLoad={() => setImageLoading(false)}
-                    placeholder='blur'
-                    blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqgcAAIkAgzU/z1kAAAAASUVORK5CYII='
                 />
 
             </div>
